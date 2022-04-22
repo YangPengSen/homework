@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title></title>
+	</head>
+	<style type="text/css">
+		.box {}
+
+		.box header {
+			width: 200px;
+			height: 50px;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+
+		.box .right {
+			width: 0;
+			height: 0;
+			border: 10px solid transparent;
+			border-top: 10px solid #f00;
+		}
+
+		.top {
+			width: 0;
+			height: 0;
+			border: 10px solid transparent;
+			border-bottom: 10px solid #f00;
+		}
+
+		.active {
+			background-color: #f33f33;
+		}
+
+		.rotated {
+			transform: rotate(180deg);
+		}
+	</style>
+	<body>
+		<div class="box">
+			<header>
+				<p>播放列表</p>
+				<div class="right"></div>
+			</header>
+			<ul>
+				<li>列表1</li>
+				<li>列表1</li>
+				<li>列表1</li>
+				<li>列表1</li>
+				<li>列表1</li>
+				<li>列表1</li>
+				<li>列表1</li>
+				<li>列表1</li>
+			</ul>
+		</div>
+	</body>
+	<script type="text/javascript">
+		let header = document.querySelector('header')
+		let right = document.querySelector('.right')
+		let ul = document.querySelector('ul')
+		let li = document.querySelectorAll('li')
+		let flag = false
+		header.onclick = function() {
+			flag = !flag
+			if (flag) {
+				right.classList.add('rotated')
+				ul.style.display = 'none'
+			} else {
+				right.classList.remove('rotated')
+				ul.style.display = 'block'
+			}
+		}
+		for (let i = 0; i < li.length; i++) {
+			li[i].onmouseover = function() {
+				this.classList.add('active')
+			}
+			li[i].onmouseout = function() {
+				li[i].classList.remove('active')
+			}
+		}
+	</script>
+</html>

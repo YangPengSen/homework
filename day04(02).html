@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<style>
+		.img{
+			width: 200px;
+			height: 200px;
+		}
+		img{
+			width: 50px;
+			height: 50px;
+		}
+	</style>
+	<body>
+		<img class="img" src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Finews.gtimg.com%2Fnewsapp_bt%2F0%2F13641059349%2F1000.jpg&refer=http%3A%2F%2Finews.gtimg.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1653218443&t=287722b5d7719a01dcdce7dbd783e6e0" alt="">
+		<br>
+		<img class="minimg" src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Finews.gtimg.com%2Fnewsapp_bt%2F0%2F13641059349%2F1000.jpg&refer=http%3A%2F%2Finews.gtimg.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1653218443&t=287722b5d7719a01dcdce7dbd783e6e0" alt="">
+		<img class="minimg" src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fi0.hdslb.com%2Fbfs%2Farticle%2F8d872eb8de3d2062d0f98d8f4168a84d34be2e85.jpg&refer=http%3A%2F%2Fi0.hdslb.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1653218443&t=abdaf01bc4630682384fe0b2efe3daca" alt="">
+		<img class="minimg" src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fn.sinaimg.cn%2Fspider2020121%2F57%2Fw422h435%2F20201201%2Ff86f-ketnnaq0729481.jpg&refer=http%3A%2F%2Fn.sinaimg.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1653218443&t=5c5753a76372043f5fc5a219e6cc0c11" alt="">
+		<br>
+		<img class="minimg" src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fi0.hdslb.com%2Fbfs%2Farticle%2F6fb429e5cca4805a53db64848a86c0b0ad306ba0.png&refer=http%3A%2F%2Fi0.hdslb.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1653218443&t=7e3a4589c81914c0b8eea717586611c3" alt="">
+		<img class="minimg" src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fwww.yuejiayinyue.com%2Fuploads%2Fimage%2F20210422%2Fpic_8378_4.jpg&refer=http%3A%2F%2Fwww.yuejiayinyue.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1653218443&t=1f2aff19bdd8986b08607a84d131ab3b" alt="">
+		<img class="minimg" src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fpic2.zhimg.com%2Fv2-37b4395db62cbe5252da93b80d7ced04_r.jpg%3Fsource%3D12a79843&refer=http%3A%2F%2Fpic2.zhimg.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1653218443&t=e50f71880b4896461f9f039af52879c0" alt="">
+		</body>
+	<script>
+		let img = document.querySelectorAll('.minimg')
+		let bigimg = document.querySelector('.img')
+		for(let i = 0; i < img.length; i++){
+			img[i].onmouseover = function(){
+				bigimg.src = this.src
+			}
+		}
+	</script>
+</html>

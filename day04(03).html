@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<style>
+		ul {
+			width: 260px;
+			display: flex;
+			justify-content: space-around;
+			flex-wrap: wrap;
+		}
+
+		ul li {
+			list-style: none;
+			width: 50px;
+			height: 50px;
+			text-align: center;
+			line-height: 50px;
+			position: relative;
+		}
+
+		li img {
+			width: 60px;
+			height: 60px;
+			position: absolute;
+			left: 0;
+			top: 0;
+			display: none;
+		}
+		.show{
+			display: block;
+		}
+	</style>
+	<body>
+		<ul>
+			<li>
+				<span>张三</span>
+				<img
+					src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fi0.hdslb.com%2Fbfs%2Farticle%2F6fb429e5cca4805a53db64848a86c0b0ad306ba0.png&refer=http%3A%2F%2Fi0.hdslb.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1653218443&t=7e3a4589c81914c0b8eea717586611c3" />
+			</li>
+			<li>
+				<span>张三</span>
+				<img
+					src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fi0.hdslb.com%2Fbfs%2Farticle%2F6fb429e5cca4805a53db64848a86c0b0ad306ba0.png&refer=http%3A%2F%2Fi0.hdslb.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1653218443&t=7e3a4589c81914c0b8eea717586611c3" />
+			</li>
+			<li>
+				<span>张三</span>
+				<img
+					src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fi0.hdslb.com%2Fbfs%2Farticle%2F6fb429e5cca4805a53db64848a86c0b0ad306ba0.png&refer=http%3A%2F%2Fi0.hdslb.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1653218443&t=7e3a4589c81914c0b8eea717586611c3" />
+			</li>
+			<li>
+				<span>张三</span>
+				<img
+					src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fi0.hdslb.com%2Fbfs%2Farticle%2F6fb429e5cca4805a53db64848a86c0b0ad306ba0.png&refer=http%3A%2F%2Fi0.hdslb.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1653218443&t=7e3a4589c81914c0b8eea717586611c3" />
+			</li>
+			<li>
+				<span>张三</span>
+				<img
+					src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fi0.hdslb.com%2Fbfs%2Farticle%2F6fb429e5cca4805a53db64848a86c0b0ad306ba0.png&refer=http%3A%2F%2Fi0.hdslb.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1653218443&t=7e3a4589c81914c0b8eea717586611c3" />
+			</li>
+			<li>
+				<span>张三</span>
+				<img
+					src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fi0.hdslb.com%2Fbfs%2Farticle%2F6fb429e5cca4805a53db64848a86c0b0ad306ba0.png&refer=http%3A%2F%2Fi0.hdslb.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1653218443&t=7e3a4589c81914c0b8eea717586611c3" />
+			</li>
+			<li>
+				<span>张三</span>
+				<img
+					src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fi0.hdslb.com%2Fbfs%2Farticle%2F6fb429e5cca4805a53db64848a86c0b0ad306ba0.png&refer=http%3A%2F%2Fi0.hdslb.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1653218443&t=7e3a4589c81914c0b8eea717586611c3" />
+			</li>
+			<li>
+				<span>张三</span>
+				<img
+					src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fi0.hdslb.com%2Fbfs%2Farticle%2F6fb429e5cca4805a53db64848a86c0b0ad306ba0.png&refer=http%3A%2F%2Fi0.hdslb.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1653218443&t=7e3a4589c81914c0b8eea717586611c3" />
+			</li>
+			<li>
+				<span>张三</span>
+				<img
+					src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fi0.hdslb.com%2Fbfs%2Farticle%2F6fb429e5cca4805a53db64848a86c0b0ad306ba0.png&refer=http%3A%2F%2Fi0.hdslb.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1653218443&t=7e3a4589c81914c0b8eea717586611c3" />
+			</li>
+			<li>
+				<span>张三</span>
+				<img
+					src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fi0.hdslb.com%2Fbfs%2Farticle%2F6fb429e5cca4805a53db64848a86c0b0ad306ba0.png&refer=http%3A%2F%2Fi0.hdslb.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1653218443&t=7e3a4589c81914c0b8eea717586611c3" />
+			</li>
+		</ul>
+	</body>
+	<script>
+		let li = document.querySelectorAll('li')
+		let img = document.querySelectorAll('img')
+		for (let i = 0; i < li.length; i++) {
+			li[i].onmouseover = function(){
+				img[i].classList.add('show')
+			}
+			li[i].onmouseout = function(){
+				img[i].classList.remove('show')
+			}
+		}
+	</script>
+</html>
